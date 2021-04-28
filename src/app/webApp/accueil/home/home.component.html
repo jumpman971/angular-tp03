@@ -1,0 +1,29 @@
+<h1>L'internationalisation I18N</h1>
+<p class="alert alert-primary" i18n="@@titre">Hello Angular</p>
+<p class="alert alert-warning" i18n>Angular is the Best Framework in the World !</p>
+
+<p>
+    <img src="assets/images/drapeaux/en/drapeau_en.png" title="My Flag" i18n i18n-src i18n-title>
+</p>
+
+<p class="alert alert-primary">
+    0- ng add @angular/localize
+    <br>Cette dépendance ajoutel support de l'internationalisation I18N à notre projet (NG>=9)
+</p>
+
+<p class="alert alert-primary">1- Marquer les zones (éléments) à traduire avec i18n</p>
+
+<p class="alert alert-primary">2- Editer le fichier angular.json ===> 3 zones Projets (messages.xlf) - build - serve</p>
+
+<p class="alert alert-primary">
+    4- Générer le fichier xlf (format json)
+    <br>ng extract-xi18n --output-path src/locale
+</p>
+
+<p class="alert alert-primary">5- Tester la traduction
+    <br>ng serve --configuration=fr --open
+    <br>ng serve --configuration=es --open
+</p>
+<p class="alert alert-primary">6- Build final
+        <br>ng build --localize
+    </p>
